@@ -1,2 +1,2 @@
 #!/bin/bash
-chgrb school file
+chgrp school file
