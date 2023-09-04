@@ -1,2 +1,2 @@
 #!/bin/bash
-ls -rla1 | awk '{printf("%s\n",\$9)} END{printf("\n")}'
+ls -rla1 | awk '{printf("%s\n",\$9)} '
