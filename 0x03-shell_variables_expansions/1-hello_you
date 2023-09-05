@@ -1,2 +1,2 @@
 #!/bin/bash
-echo 'helo user' >> ~
+echo 'helo user' $USER
