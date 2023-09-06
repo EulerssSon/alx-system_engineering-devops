@@ -1,2 +1,2 @@
 #!/bin/bash
-PATH | tr '/' ' ' |   tr ':' ' ' | xargs -n1 | sort |uniq | wc -l
+echo $PATH | tr ':' ' ' | wc -w
