@@ -1,2 +1,2 @@
 #!/bin/bash
-echo $((bestchol#$((water#$WATER)) + ((STIR#$.stir)) ))
+printf "%o\n" $(($((5#$(echo $WATER | tr water 01234))) + $((5#$(echo $STIR | tr stir. 01234))))) | tee 01234567 bestchol
