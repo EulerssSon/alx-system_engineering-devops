@@ -1,2 +1,2 @@
 #!/bin/bash
-cut -c 1 | awk '{printf "%s" , $0}' | tee >/dev/null
+cut -c 1 | paste -s -d ''
