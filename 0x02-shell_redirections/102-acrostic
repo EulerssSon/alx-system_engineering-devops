@@ -1,1 +1,2 @@
 #!/bin/bash
+cut -c 1 | awk '{printf "%s", $0}'
