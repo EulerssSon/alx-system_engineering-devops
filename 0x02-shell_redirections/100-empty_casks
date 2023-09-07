@@ -1,2 +1,2 @@
 #!/bin/bash
-ls -rla1 | awk '{printf("%s\n",\$9)} '
+find -size 0 | awk -F '/'{print $NF}'
