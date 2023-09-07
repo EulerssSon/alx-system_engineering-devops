@@ -1,2 +1,2 @@
 #!/bin/bash
-find -size 0 | awk -F '/'{print $NF}'
+find -empty | awk -F '/'{print $NF}'
