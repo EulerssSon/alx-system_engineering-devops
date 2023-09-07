@@ -1,2 +1,2 @@
 #!/bin/bash
-ls -lSrRa *.gif | grep -v "^d" | awk '{print $9}'| awk -F . '{print $1}'
+find . -type f -iname "*.c" -printf "%f\n" | sort -f | awk -F '.' '{print $1}'
