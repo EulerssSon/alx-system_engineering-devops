@@ -1,1 +1,16 @@
 #!/usr/bin/env bash
+# This script is to print display hours form 0 to 12 and dispmly minutes from 1 to 59
+
+Hours=0
+Minutes=1
+while [ $Hours -le 12 ]
+do
+	echo "Hour: $Hours"
+	while [ $Minutes -le 59 ]
+	do
+		echo $Minutes
+		Minutes=$((Minutes+1))
+	done
+	Minutes=1
+	Hours=$((Hours+1))
+done
