@@ -1,1 +1,7 @@
 #!/usr/bin/env bash
+# this script is used to list the files in the current directory one at a line
+file=$(ls)
+for _ in $file
+do
+	echo "$_"
+done
