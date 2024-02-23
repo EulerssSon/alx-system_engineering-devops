@@ -1,1 +1,16 @@
 #!/usr/bin/env bash
+# th_s scr_pt ss_ tp pr_nt out the f_zz buzz problem form 1 to 100
+
+for _ in {1..100}
+do
+	if ((_ % 15 == 0)); then
+		echo "FizzBuzz"
+	elif ((_ % 3 == 0)); then
+		echo "Fizz"
+	elif ((_ % 5 == 0)); then
+		echo "Buzz"
+	else
+		echo "$_"
+	fi
+	((_++))
+done
