@@ -1,1 +1,11 @@
 #!/usr/bin/env bash
+# This script is to print Best School 10 times and hi before the last
+i=1
+while [ $i -le 10 ]
+do
+	if [ $i -eq 10  ];then
+		echo "Hi"
+	fi
+	echo "Best School"
+	i=$((i+1))
+done
