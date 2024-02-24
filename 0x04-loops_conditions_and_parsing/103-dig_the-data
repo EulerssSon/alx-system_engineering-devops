@@ -1,4 +1,4 @@
 #!/usr/bin/env bash
 #usses awk command to sort and uniq based on the count of the occ of hhtpsids
-awk '{print $1, $9}' apache-access.log | sort -k 2 | uniq -c | sort -nr | awk '{print $1, $2}'
+awk '{print $1, $9}' apache-access.log | sort -k | uniq -c | sort -nr
 
