@@ -3,4 +3,4 @@
 #Kind complex sorting in apche log file sort vased on the seond k | uniq -c to count occ | sort -n to sorted
 #based of the occ the print it
 #awk
-awk '{print $1 " "  $9}' apache-access.log | sort -k 2 | uniq -c | sort -nr | awk '{print $1, $2}'
+awk '{print $1,$9}' apache-access.log | sort |  uniq -c | sort -nr
