@@ -1,6 +1,3 @@
 #!/usr/bin/env bash
-
-#Kind complex sorting in apche log file sort vased on the seond k | uniq -c to count occ | sort -n to sorted
-#based of the occ the print it
-#awk
+#usses awk command to sort and uniq based on the count of the occ of hhtpsids
 awk '{print $1,$9}' apache-access.log | sort |  uniq -c | sort -nr
