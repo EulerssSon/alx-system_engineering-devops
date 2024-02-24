@@ -1,1 +1,6 @@
 #!/usr/bin/env bash
+#this script to print to inf and beyond and using the intrepprut sig to kill it
+while true; do
+	echo "To infinity and beyond"
+	sleep 2
+done
