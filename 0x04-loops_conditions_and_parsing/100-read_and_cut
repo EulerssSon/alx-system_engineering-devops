@@ -1,3 +1,11 @@
 #!/usr/bin/env bash
 #this script is to print a ceratin field in the /etx/passwd file
-< /etc/passwd  cut -d ':' -f 1,3,6
+
+IFS=":"
+while IFS= read -r line; do
+    # Use read to split the line into fields
+    read -r username _ uid _ _ home _ <<< "$line"
+
+    # Print selected fields (3rd, 7th, and 5th)
+    echo "$username:$uid:$home"
+done < /etc/passwd
