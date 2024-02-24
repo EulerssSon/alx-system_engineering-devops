@@ -1,3 +1,3 @@
 #!/usr/bin/env bash
 #this script is to show in formated proess and show its hierarchy
-ps -axjf
+ps -auxf
