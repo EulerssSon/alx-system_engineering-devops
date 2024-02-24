@@ -13,4 +13,5 @@ trap 'rm -f $file; exit' SIGQUIT SIGTERM
 echo $$ > $file
 while true; do
 	echo "To infinity and beyond"
+	sleep 2
 done
