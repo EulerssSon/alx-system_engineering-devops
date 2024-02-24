@@ -1,1 +1,3 @@
 #!/usr/bin/env bash
+#this script is using pgrep command and showing the name aswell
+pgrep -l bash
