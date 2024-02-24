@@ -1,1 +1,4 @@
 #!/usr/bin/env bash
+#this script is to show in formated proess and show its hierarchy
+# shellcheck disable=SC2009
+ps -auxf | grep bash
