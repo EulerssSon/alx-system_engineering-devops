@@ -1,10 +1,6 @@
 #!/usr/bin/env bash
 # Tell the story of /etc/passwd
 
-IFS=":"
-while IFS= read -r line; do
-    # Use read to split the line into fields
-    read -r name pass uid gid info home shell
-    echo "The user $name is part of the $gid gang, lives in $home and rides $shell. $uid's place is protected by the passcode $pass, more info about the user here: $info."
-
+while IFS=: read -r user password uid gid info home shell; do
+    echo "The user $user is part of the $gid gang, lives in $home and rides $shell. $uid's place is protected by the passcode $password, more info about the user here: $info"
 done < /etc/passwd
