@@ -1,0 +1,3 @@
+#!/usr/bin/env bash
+#this is to show the ip4
+ifconfig | grep inet | awk '{print $2}'

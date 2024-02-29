@@ -1,0 +1,9 @@
+#!/usr/bin/env bash
+#this script is to change locals ips and something that only for learning purpose
+#donot do it it will make a ton of prolems
+#it will run on docker so i use the first and last lines
+#to make this script work u need to giv it root previlidges
+cp /etc/hosts ~/hosts.new
+echo "127.0.0.2     localhost" > ~/hosts.new
+echo "8.8.8.8       facebook.com" >> ~/hosts.new
+cp -f ~/hosts.new /etc/hosts

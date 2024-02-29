@@ -1,0 +1,4 @@
+#!/usr/bin/env bash
+#this script  is to use the powerful tool for netwoking and securitny netcat
+#nc for netcat -l for listens localhose is the ip we want to exctues on out local 98 the port it must be free
+nc -l localhost 98
