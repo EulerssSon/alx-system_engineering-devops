@@ -1,0 +1,3 @@
+#!/usr/bin/env bash
+#this scritp is to list and show pid of sockets
+netstat -pl
