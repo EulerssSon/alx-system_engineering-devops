@@ -1,3 +1,4 @@
+#creates a temp file with content i love puppet
 file { '/tmp/school':
   ensure  => 'present',
   content => 'I love Puppet',
